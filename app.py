@@ -560,7 +560,7 @@ if st.session_state.step == "login":
             username = st.text_input("Username", placeholder="Enter username")
             password = st.text_input("Password", type="password", placeholder="Enter password")
             if st.button("Sign In →", use_container_width=True, type="primary"):
-                if username == "admin" and password == "shahlab2024":
+                if username == "admin" and password == "admin007":
                     st.session_state.step = "patient"
                     st.rerun()
                 else:
