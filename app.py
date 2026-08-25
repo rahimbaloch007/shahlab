@@ -45,6 +45,37 @@ footer { display:none!important; }
 # ── Settings ───────────────────────────────────────────────────────────────────
 SETTINGS_PATH = os.path.join(os.path.dirname(__file__), "settings.json")
 
+# GitHub-backed persistence: Streamlit Community Cloud resets the container's
+# filesystem to match the GitHub repo on every sleep/wake/redeploy, so a plain
+# local file write to settings.json does not survive. If a GITHUB_TOKEN secret
+# is configured, save_settings() also commits the updated file straight back
+# to the repo via the GitHub Contents API, so changes persist across restarts.
+GITHUB_REPO   = "rahimbaloch007/shahlab"
+GITHUB_BRANCH = "main"
+GITHUB_PATH   = "settings.json"
+
+def _github_push(content_str):
+    import requests
+    token = st.secrets.get("GITHUB_TOKEN", "") if hasattr(st, "secrets") else ""
+    if not token:
+        return  # no token configured — local-only persistence (will not survive redeploys)
+    api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_PATH}"
+    headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+    try:
+        # need the current file's sha to update it
+        r = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH}, timeout=10)
+        sha = r.json().get("sha") if r.status_code == 200 else None
+        payload = {
+            "message": f"Update settings.json ({datetime.now().strftime('%Y-%m-%d %H:%M')})",
+            "content": base64.b64encode(content_str.encode()).decode(),
+            "branch": GITHUB_BRANCH,
+        }
+        if sha:
+            payload["sha"] = sha
+        requests.put(api_url, headers=headers, json=payload, timeout=10)
+    except Exception:
+        pass  # network/API hiccup — local file already has the change for this session
+
 def load_settings():
     try:
         with open(SETTINGS_PATH) as f:
@@ -59,8 +90,10 @@ def load_settings():
     return s
 
 def save_settings(s):
+    content_str = json.dumps(s, indent=2)
     with open(SETTINGS_PATH, "w") as f:
-        json.dump(s, f, indent=2)
+        f.write(content_str)
+    _github_push(content_str)
 
 # ── Built-in catalog ───────────────────────────────────────────────────────────
 BUILTIN_CATALOG = {
@@ -745,7 +778,7 @@ elif st.session_state.step == "patient":
             st.session_state.patient = {
                 "name":name.strip(),"age":age.strip(),"gender":gender,
                 "contact":contact.strip(),"doctor":doctor.strip(),
-                "sample":sample.isoformat(),"rdate":datetime.now().strftime("%Y-%m-%d %H:%M"),
+                "sample":sample.isoformat(),
             }
             st.session_state.step = "tests"
             st.rerun()
@@ -849,6 +882,7 @@ elif st.session_state.step == "results":
             filled = [r for r in all_rows if r["result"].strip()]
             if not filled: st.error("Enter at least one result value.")
             else:
+                st.session_state.patient["rdate"] = datetime.now().strftime("%Y-%m-%d %H:%M")
                 st.session_state.report_rows = filled
                 st.session_state.step        = "report"
                 st.rerun()
