@@ -3,5 +3,17 @@
   "lab_address": "Golra Railway Pathak Chowk, Islamabad",
   "lab_phone": "03413793007",
   "print_header": true,
-  "custom_tests": {}
+  "custom_tests": {
+    "BIOCHEMISTRY": {
+      "HBA1C": [
+        {
+          "name": "HBA1C",
+          "unit": "%",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Normal: < 5.7 Prediabetic: 5.7 - 6.4 Diabetic : 6.5"
+        }
+      ]
+    }
+  }
 }
