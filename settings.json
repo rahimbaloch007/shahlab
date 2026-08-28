@@ -67,6 +67,17 @@
           "ref_text": "MALE: FEMALE: 3.0 - 7.0 2.5 - 6.0"
         }
       ]
+    },
+    "SEROLOGY / IMMUNOLOGY": {
+      "HIV": [
+        {
+          "name": "HIV",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Non-Reactive"
+        }
+      ]
     }
   }
 }
