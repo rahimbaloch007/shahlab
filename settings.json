@@ -13,6 +13,36 @@
           "ref_high": "",
           "ref_text": "Normal: < 5.7 Prediabetic: 5.7 - 6.4 Diabetic : 6.5"
         }
+      ],
+      "LIVER FUNCTION TESTS": [
+        {
+          "name": "TOTAL BILIRUBIN",
+          "unit": "mg/dl",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "UPTO 1.2"
+        },
+        {
+          "name": "ALT",
+          "unit": "U/L",
+          "ref_low": "",
+          "ref_high": "50",
+          "ref_text": "UPTO 45"
+        },
+        {
+          "name": "AST",
+          "unit": "U/L",
+          "ref_low": "",
+          "ref_high": "41",
+          "ref_text": "UPTO 40"
+        },
+        {
+          "name": "ALP",
+          "unit": "U/L",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "CHILDREN (15 YRS) 645 ALDOLESCENT (17 YRS) 483 WOMEN 65 - 240 MEN 80 - 270"
+        }
       ]
     }
   }
