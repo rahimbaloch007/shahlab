@@ -78,6 +78,31 @@
           "ref_text": "Non-Reactive"
         }
       ]
+    },
+    "HORMONES": {
+      "THYROID FUNCTION TEST": [
+        {
+          "name": "Free T3",
+          "unit": "pg/mL",
+          "ref_low": "1.8",
+          "ref_high": "4.5",
+          "ref_text": "2.0 - 4.4"
+        },
+        {
+          "name": "Free T4",
+          "unit": "ng/dL",
+          "ref_low": "0.90",
+          "ref_high": "1.8",
+          "ref_text": "0.93 - 1.7"
+        },
+        {
+          "name": "TSH",
+          "unit": "\u00b5IU/mL",
+          "ref_low": "0.23",
+          "ref_high": "4.4",
+          "ref_text": "0.28 - 4.3"
+        }
+      ]
     }
   }
 }
