@@ -103,6 +103,94 @@
           "ref_text": "0.28 - 4.3"
         }
       ]
+    },
+    "HEMATOLOGY": {
+      "CBC (BLOOD COMPLETE PICTURE)": [
+        {
+          "name": "TLC",
+          "unit": "x10^9/l",
+          "ref_low": "3.9",
+          "ref_high": "11.1",
+          "ref_text": "4 - 11"
+        },
+        {
+          "name": "RBC",
+          "unit": "x10^12/l",
+          "ref_low": "3.9",
+          "ref_high": "6.0",
+          "ref_text": "4.0 - 5.9"
+        },
+        {
+          "name": "HEMOGLOBIN (HB)",
+          "unit": "g/dl",
+          "ref_low": "11.4",
+          "ref_high": "16.1",
+          "ref_text": "11.5 - 16"
+        },
+        {
+          "name": "HCT",
+          "unit": "%",
+          "ref_low": "35",
+          "ref_high": "47",
+          "ref_text": "36 - 46"
+        },
+        {
+          "name": "MCV",
+          "unit": "fl",
+          "ref_low": "79",
+          "ref_high": "101",
+          "ref_text": "80 - 100"
+        },
+        {
+          "name": "MCH",
+          "unit": "pg",
+          "ref_low": "27",
+          "ref_high": "33.5",
+          "ref_text": "27.5 - 33.2"
+        },
+        {
+          "name": "MCHC",
+          "unit": "g/dL",
+          "ref_low": "30",
+          "ref_high": "37",
+          "ref_text": "31 - 36"
+        },
+        {
+          "name": "Platelet Count",
+          "unit": "x10^9/l",
+          "ref_low": "149",
+          "ref_high": "401",
+          "ref_text": "150 - 400"
+        },
+        {
+          "name": "NEUTROPHILS",
+          "unit": "%",
+          "ref_low": "44",
+          "ref_high": "76",
+          "ref_text": "45 - 75"
+        },
+        {
+          "name": "LYMPHOCYTES",
+          "unit": "%",
+          "ref_low": "19",
+          "ref_high": "46",
+          "ref_text": "20 - 45"
+        },
+        {
+          "name": "MONOCYTES",
+          "unit": "%",
+          "ref_low": "",
+          "ref_high": "10",
+          "ref_text": "01 - 09"
+        },
+        {
+          "name": "EOSINOPHILS",
+          "unit": "%",
+          "ref_low": "",
+          "ref_high": "07",
+          "ref_text": "01 - 06"
+        }
+      ]
     }
   }
 }
