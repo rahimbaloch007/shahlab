@@ -83,17 +83,17 @@
       "THYROID FUNCTION TEST": [
         {
           "name": "Free T3",
-          "unit": "pg/mL",
-          "ref_low": "1.8",
-          "ref_high": "4.5",
-          "ref_text": "2.0 - 4.4"
+          "unit": "ng/dL",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "0.2 - 0.44"
         },
         {
           "name": "Free T4",
           "unit": "ng/dL",
           "ref_low": "0.90",
           "ref_high": "1.8",
-          "ref_text": "0.93 - 1.7"
+          "ref_text": "0.93 - 1.71"
         },
         {
           "name": "TSH",
