@@ -223,6 +223,122 @@
           "ref_text": "01 - 06"
         }
       ]
+    },
+    "URINE ANALYSIS": {
+      "URINE R/E": [
+        {
+          "name": "Color",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": ""
+        },
+        {
+          "name": "Appearance",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Clear"
+        },
+        {
+          "name": "Specific Gravity",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "1.005 - 1.030"
+        },
+        {
+          "name": "pH",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "5.5 - 8.0"
+        },
+        {
+          "name": "Nitrate",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        },
+        {
+          "name": "Urine Protein",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        },
+        {
+          "name": "Glucose",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        },
+        {
+          "name": "Ketone",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        },
+        {
+          "name": "Leukocyte",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        },
+        {
+          "name": "Blood",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        },
+        {
+          "name": "Puss Cells",
+          "unit": "/HPF",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "M : 0 - 3   F : 0 - 5"
+        },
+        {
+          "name": "RBC",
+          "unit": "/HPF",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "0 - 3"
+        },
+        {
+          "name": "Epithelial Cells",
+          "unit": "/HPF",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "M : 0 - 3. F : 0 - 6"
+        },
+        {
+          "name": "Crystal",
+          "unit": "/HPF",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Nil"
+        },
+        {
+          "name": "Cast",
+          "unit": "/HPF",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Nil"
+        },
+        {
+          "name": "Others",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Nil"
+        }
+      ]
     }
   }
 }
