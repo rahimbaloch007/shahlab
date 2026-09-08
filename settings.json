@@ -98,6 +98,15 @@
           "ref_high": "",
           "ref_text": "<160"
         }
+      ],
+      "SERUM LIPASE": [
+        {
+          "name": "SERUM LIPASE",
+          "unit": "U/L",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "10 - 80"
+        }
       ]
     },
     "SEROLOGY / IMMUNOLOGY": {
