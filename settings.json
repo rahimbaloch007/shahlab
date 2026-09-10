@@ -347,6 +347,15 @@
           "ref_high": "",
           "ref_text": "Nil"
         }
+      ],
+      "UPT ( URINE PREGNANCY TEST )": [
+        {
+          "name": "UPT",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        }
       ]
     },
     "COAGULATION": {
