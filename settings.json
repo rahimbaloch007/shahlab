@@ -107,6 +107,43 @@
           "ref_high": "",
           "ref_text": "10 - 80"
         }
+      ],
+      "LIPID PROFILE": [
+        {
+          "name": "CHOLESTEROL",
+          "unit": "mg/dl",
+          "ref_low": "",
+          "ref_high": "201",
+          "ref_text": "<200"
+        },
+        {
+          "name": "TRIGLYCERIDE",
+          "unit": "mg/dl",
+          "ref_low": "",
+          "ref_high": "201",
+          "ref_text": "Normal:- 60 -160 Border Line:- 160 - 190 High:- > 200"
+        },
+        {
+          "name": "HDL",
+          "unit": "mg/dl",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Normal:- 60 -160 Border Line:- 160 - 190 High:- > 200"
+        },
+        {
+          "name": "HDL",
+          "unit": "mg/dl",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Male: 40 - 60 Female: 35 - 55"
+        },
+        {
+          "name": "LDL",
+          "unit": "mg/dl",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Normal:- 60-160 Border Line High:- 161 - 190"
+        }
       ]
     },
     "SEROLOGY / IMMUNOLOGY": {
