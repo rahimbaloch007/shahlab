@@ -124,11 +124,11 @@
           "ref_text": "Normal:- 60 -160 Border Line:- 160 - 190 High:- > 200"
         },
         {
-          "name": "HDL",
-          "unit": "mg/dl",
+          "name": "",
+          "unit": "",
           "ref_low": "",
           "ref_high": "",
-          "ref_text": "Normal:- 60 -160 Border Line:- 160 - 190 High:- > 200"
+          "ref_text": ""
         },
         {
           "name": "HDL",
