@@ -148,6 +148,15 @@
           "ref_high": "",
           "ref_text": "Non-Reactive"
         }
+      ],
+      "TYPHI DOT": [
+        {
+          "name": "TYPHI DOT",
+          "unit": "",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "Negative"
+        }
       ]
     },
     "HORMONES": {
