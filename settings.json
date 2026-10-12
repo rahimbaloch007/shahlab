@@ -137,6 +137,29 @@
           "ref_high": "",
           "ref_text": "Normal:- 60-160 Border Line High:-161 - 190"
         }
+      ],
+      "SERUM ELECTROLYTES": [
+        {
+          "name": "SODIUM",
+          "unit": "mmol/L",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "135 - 145"
+        },
+        {
+          "name": "POTASSIUM",
+          "unit": "mmol/L",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "3.5 - 5.0"
+        },
+        {
+          "name": "CHLORIDE",
+          "unit": "mmol/L",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "96 - 105"
+        }
       ]
     },
     "SEROLOGY / IMMUNOLOGY": {
