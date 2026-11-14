@@ -444,6 +444,17 @@
           "ref_text": "26-34 (Control Value)"
         }
       ]
+    },
+    "VITAMINS & MINERALS": {
+      "Vitamin D": [
+        {
+          "name": "Vitamin D",
+          "unit": "ng/mL",
+          "ref_low": "<20",
+          "ref_high": "",
+          "ref_text": "Sufficient:30\u2013100 / Deficient:< 20"
+        }
+      ]
     }
   }
 }
