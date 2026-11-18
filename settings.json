@@ -160,6 +160,15 @@
           "ref_high": "",
           "ref_text": "96 - 105"
         }
+      ],
+      "Calcium": [
+        {
+          "name": "Calcium",
+          "unit": "mg/dL",
+          "ref_low": "",
+          "ref_high": "",
+          "ref_text": "8.5 - 10.5"
+        }
       ]
     },
     "SEROLOGY / IMMUNOLOGY": {
